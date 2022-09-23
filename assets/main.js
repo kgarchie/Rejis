@@ -111,7 +111,7 @@ function sendMail() {
         email_id: document.getElementById('email').value,
         message: document.getElementById('message').value,
     }
-    emailjs.send('service_qew0q95', 'template_tdelmb2', params).then(function (res) {
+    emailjs.send('service_qew0q95', 'template_9waghgc', params).then(function (res) {
         alert('Email Sent ' + res.status);
     })
 }
