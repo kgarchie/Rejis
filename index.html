@@ -521,11 +521,11 @@
             <div class="form" id="contact-form">
                 <div class="form-div">
                     <label for="username" class="form-input-label" name="user_name" id="username">Your Username:</label>
-                    <input type="text" placeholder="Optional" id="email" required>
+                    <input type="text" placeholder="Optional" id="username">
                 </div>
                 <div class="form-div">
                     <label for="email" class="form-input-label" name="user_email">Your Email:</label>
-                    <input type="text" placeholder="someone@domain.com" id="email">
+                    <input type="email" placeholder="someone@domain.com" id="email" required>
                 </div>
                 <div class="form-div">
                     <label for="message" class="form-input-label">Your Message:</label>
@@ -535,9 +535,9 @@
             </div>
 
             <div class="action-buttons">
-                <button class="shop-now" onclick="sendMail()">Send Email</button>
+                <button class="shop-now" onclick="sendMail()" type="submit">Send Email</button>
                 or
-                <button class="duse" onclick="openWhatsApp()">WhatsApp</button>
+                <button class="duse" onclick="openWhatsApp()" type="submit">WhatsApp</button>
             </div>
         </div>
     </section>

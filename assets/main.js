@@ -111,9 +111,14 @@ function sendMail() {
         email_id: document.getElementById('email').value,
         message: document.getElementById('message').value,
     }
-    emailjs.send('service_qew0q95', 'template_9waghgc', params).then(function (res) {
-        alert('Email Sent ' + res.status);
-    })
+
+    if (params.email_id !== ''){
+        emailjs.send('service_qew0q95', 'template_9waghgc', params).then(function (res) {
+            alert('Email Sent Successfully! ' + res.status);
+        })
+    } else {
+        alert('Email Input is empty!');
+    }
 }
 
 function openWhatsApp() {
