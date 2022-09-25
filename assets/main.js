@@ -124,7 +124,7 @@ function sendMail() {
 function openWhatsApp() {
     var name = document.getElementById('username').value;
     var msg = document.getElementById('message').value;
-    var sMsg = encodeURIComponent("Hi this is " + name + " " + msg);
+    var sMsg = encodeURIComponent("I am " + name + " \n\n" + msg);
     var whatsapp_url = "whatsapp://send?phone=254798936038&text=" + sMsg;
     window.location.href = whatsapp_url;
 }
