@@ -970,7 +970,7 @@ button#prev {
 .duse {
     background-color: var(--cooler-white);
     color: #005F73;
-    border: 1px solid #0A9396;
+    border: 2px solid #0A9396;
 }
 
 .duse:hover{
