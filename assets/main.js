@@ -21,6 +21,10 @@ if (window_width <= 768) {
         var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
         pictureEl.style.top = "-" + scrollTop / 1.8 + "px";
     });
+
+    // disable data-aos on mobile on services section on mobile
+    const services = document.querySelector('.services');
+    services.setAttribute('data-aos', 'false');
 }
 
 
