@@ -233,7 +233,7 @@ a:hover {
 }
 
 .frame img {
-    transform: rotate(-9deg);
+    transform: rotate(-1deg);
 }
 
 .about-me {
@@ -495,11 +495,45 @@ a:hover {
     background: #eee;
 }
 
+/* Credentials */
+.credentials {
+    padding: 5vh 0;
+    background-color: var(--cooler-white);
+    padding-bottom: 10vh;
+}
+
+.credentials h1 {
+    margin-left: 2vw;
+    margin-bottom: 5vh;
+}
+
+.cred-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 70% auto;
+    padding-left: 10vw;
+    padding-right: 5vw;
+}
+
+.cred-container li{
+    list-style: number;
+}
+
+.cv a{
+    border: 2px solid violet;
+    padding: 0.5rem 1rem;
+    color: var(--accent);
+}
+
+.cv a:hover{
+    background-color: violet;
+    color: var(--cooler-white);
+}
+
 
 /* Services */
 .services {
     padding: 5vh 0;
-    background-color: var(--cooler-white);
 }
 
 .services h1 {
@@ -693,6 +727,7 @@ a:hover {
 
 .portfolio {
     padding: 5vh 0;
+    background-color: var(--cooler-white);
 }
 
 .carousel {
@@ -814,7 +849,6 @@ a:hover {
 
 .references {
     padding: 5vh 0;
-    background-color: var(--cooler-white);
 }
 
 #box {
@@ -914,6 +948,7 @@ button#prev {
 /* Feedback */
 .feedback {
     padding: 5vh 0;
+    background-color: var(--cooler-white);
 }
 
 .feedback h1 {
@@ -995,8 +1030,6 @@ button#prev {
 /* Footer */
 
 footer {
-    background: var(--cooler-white);
-
     height: auto;
     width: 100vw;
 

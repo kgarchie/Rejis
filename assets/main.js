@@ -90,7 +90,7 @@ function prev() {
     displayTestimonial();
 }
 
-function showText(toggleText) {
+function showText() {
     toggles.forEach((element) => {
         element.classList.toggle('active');
     });
@@ -112,7 +112,7 @@ function sendMail() {
         message: document.getElementById('message').value,
     }
 
-    if (params.email_id !== ''){
+    if (params.email_id !== '') {
         emailjs.send('service_qew0q95', 'template_9waghgc', params).then(function (res) {
             alert('Email Sent Successfully! ' + res.status);
         })
@@ -153,7 +153,9 @@ window.onscroll = () => {
     var current = "";
 
     sections.forEach((section) => {
+        /* Getting the top position of the section. */
         const sectionTop = section.offsetTop;
+
         if (pageYOffset >= sectionTop - 400) {
             current = "#" + section.getAttribute("id");
         }
