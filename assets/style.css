@@ -851,7 +851,22 @@ a:hover {
     padding: 5vh 0;
 }
 
-#box {
+.center-plain{
+    display: grid;
+    place-items: center;
+}
+
+.center-plain a{
+    border: 2px solid #E91E63;
+    padding: 0.5rem 1rem;
+}
+
+.center-plain a:hover{
+    background-color: #E91E63;
+    color: var(--cooler-white);
+}
+
+/* #box {
     margin: auto;
     width: 80vw;
     max-width: 41em;
@@ -942,7 +957,7 @@ button#prev {
 
 .fab {
     color: #ff0000;
-}
+} */
 
 
 /* Feedback */
